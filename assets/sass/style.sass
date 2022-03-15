@@ -1,0 +1,38 @@
+/* SASS */
+@import 'other/*.sass'
+
+/* Another style */
+.container
+  max-width: 1719px
+  margin: 0 auto
+  padding: 0 15px
+
+.logo
+  display: inline-block
+  width: 309
+  height: 77
+  fill: $first-color
+.facebook
+  display: inline-block
+  width: 100px
+  height: 100px
+  fill: #000
+.nav-panel
+  &__body
+    margin: 0
+    padding: 15px 0
+    display: grid
+    grid-template-columns: 1fr 2fr 1fr
+  &__content
+    margin: 0
+    padding: 0
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    justify-content: space-around
+    list-style: none
+  &__link-anchor
+    font-family: 'Montserrat Medium'
+    font-size: 18px
+    line-height: 22px
+    text-decoration: none

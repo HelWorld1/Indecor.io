@@ -1,10 +1,162 @@
 /* SASS */
 /* Import style */
-@import 'fontello.css';
 /* Import font font-family: "Helvetica", "Arial", sans-serif */
 /* Color */
 /* Basic style */
 * {
   box-sizing: border-box;
+  color: #252525;
 }
-/*# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm90aGVyL2Jhc2ljLnNhc3MiLCJvdGhlci9iYXNpYy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7QUFFUTtBQUdSO0FBS0E7QUNGQTtBQUVBO0FBRUE7RUFDRSIsImZpbGUiOiJvdGhlci9iYXNpYy5jc3MiLCJzb3VyY2VSb290IjoiIiwic291cmNlc0NvbnRlbnQiOlsiLyogU0FTUyAqL1xyXG4vKiBJbXBvcnQgc3R5bGUgKi9cclxuQGltcG9ydCAnZm9udGVsbG8uY3NzJ1xyXG4vKiBJbXBvcnQgZm9udCBmb250LWZhbWlseTogXCJIZWx2ZXRpY2FcIiwgXCJBcmlhbFwiLCBzYW5zLXNlcmlmICovXHJcblxyXG4vKiBDb2xvciAqL1xyXG4kZmlyc3QtY29sb3I6ICNGRUQxMDBcclxuJHNlY29uZC1jb2xvcjogI0ZGRkZGRlxyXG4kdGhpcmQtY29sb3I6ICMzMzMzMzNcclxuLyogQmFzaWMgc3R5bGUgKi9cclxuKlxyXG4gIGJveC1zaXppbmc6IGJvcmRlci1ib3hcclxuIiwiLyogU0FTUyAqL1xuXG4vKiBJbXBvcnQgc3R5bGUgKi9cblxuQGltcG9ydCAnZm9udGVsbG8uY3NzJztcblxuLyogSW1wb3J0IGZvbnQgZm9udC1mYW1pbHk6IFwiSGVsdmV0aWNhXCIsIFwiQXJpYWxcIiwgc2Fucy1zZXJpZiAqL1xuXG4vKiBDb2xvciAqL1xuXG4vKiBCYXNpYyBzdHlsZSAqL1xuXG4qIHtcbiAgYm94LXNpemluZzogYm9yZGVyLWJveDtcbn1cblxuQHN1cHBvcnRzICgtd2Via2l0LWFwcGVhcmFuY2U6bm9uZSkge1xuXG59Il19 */
+
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+menu,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+main {
+  padding-top: 100px;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+main {
+  padding-top: 150px;
+}
+
+input,
+button {
+  max-width: 400px;
+  min-height: 80px;
+  border: none;
+}
+
+.hide {
+  display: none;
+}
+
+._opacity {
+  opacity: 0.1;
+}
+
+.mini-container {
+  max-width: 1371px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.title {
+  font: 36px/44px "Montserrat Bold";
+  letter-spacing: 0.04em;
+}
+
+.text {
+  font: 18px/22px "Montserrat Medium";
+}
+
+.btn-order {
+  font: 18px/22px "Montserrat Semibold";
+  background: #000;
+  letter-spacing: 0.155em;
+  color: #FFFFFF;
+}
+
+.anchor-link {
+  font: 18px/22px "Montserrat Semibold";
+  letter-spacing: 0.155em;
+}
+
+.mobile {
+  font: 18px/110% "Montserrat Medium";
+}

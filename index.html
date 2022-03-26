@@ -15,32 +15,85 @@
 </html>
 <body>
   <nav class="nav-panel">
-    <div class="container">
-      <div class="nav-panel__body">
-        <div class="nav-panel__logo logo"></div>
+    <div class="container nav-panel__container">
+      <div class="nav-panel__logo logo"></div>
+      <div class="nav-panel__item">
         <ul class="nav-panel__content">
-          <li class="nav-panel__item"><a class="nav-panel__link-anchor">О нас</a></li>
-          <li class="nav-panel__item"><a class="nav-panel__link-anchor">Услуги</a></li>
-          <li class="nav-panel__item"><a class="nav-panel__link-anchor">Портфолио</a></li>
-          <li class="nav-panel__item"><a class="nav-panel__link-anchor">Сотрудничество</a></li>
+          <li class="nav-panel__li mobile_hide"><a class="nav-panel__link-anchor">О нас</a></li>
+          <li class="nav-panel__li mobile_hide"><a class="nav-panel__link-anchor">Услуги</a></li>
+          <li class="nav-panel__li mobile_hide"><a class="nav-panel__link-anchor">Портфолио</a></li>
+          <li class="nav-panel__li mobile_hide"><a class="nav-panel__link-anchor">Сотрудничество </a></li>
         </ul>
-        <div class="nav-panel__social">
-          <svg>
-            <use class="facebook" xlink:href="assets/img/sprite.svg#facebook"></use>
+      </div>
+      <div class="nav-panel__item">
+        <div class="nav-panel__social mobile_hide">
+          <svg class="nav-panel__svg facebook">
+            <use xlink:href="assets/img/sprite.svg#facebook"></use>
           </svg>
-          <svg>
-            <use class="instagram" xlink:href="assets/img/sprite.svg#instagram"> </use>
-          </svg>
-        </div>
-        <div class="burger">
-          <svg>
-            <use class="burger" xlink:href="assets/img/sprite.svg#burger"></use>
+          <svg class="nav-panel__svg instagram">
+            <use xlink:href="assets/img/sprite.svg#instagram"></use>
           </svg>
         </div>
+        <svg class="nav-panel__svg burger">
+          <use class="burger" xlink:href="assets/img/sprite.svg#burger"></use>
+        </svg>
       </div>
     </div>
   </nav>
-  <main></main>
-  <footer></footer>
-  <script src="assets/js/script.js"></script>
+  <main>
+    <div class="home">
+      <div class="home__container container">
+        <div class="home__content">
+          <div class="home__body">
+            <h1 class="home__title">Разработка освещения интерьеров</h1>
+            <p class="home__text text">
+              Студия светодизайна Indecor создаст комфортное и&nbsp;функциональное освещение, отвечающее всем требованиям. 
+              Опираясь на&nbsp;наши знания, опыт и&nbsp;комплексный подход,&nbsp;мы преобразим ваше пространство, 
+              используя лишь один инструмент&nbsp;&mdash; свет!
+            </p>
+            <div class="home__link">
+              <button class="home__btn-order btn-order">Заказать подбор освещения</button><a class="home__anchor-link anchor-link" href="#test">Смотреть портфолио</a>
+            </div>
+          </div>
+          <div class="home__img_shadow">
+            <div class="home__img"></div>
+          </div>
+          <div class="home__footer">
+            <div class="home__item">
+              <h2 class="home__subtitle">386</h2>
+              <p class="home__subtext text">Выполненных проектов</p>
+            </div>
+            <div class="home__item">
+              <h2 class="home__subtitle">7 лет</h2>
+              <p class="home__subtext text">Опыта в&nbsp;разработке овещения</p>
+            </div>
+            <div class="home__item">
+              <h2 class="home__subtitle">200+</h2>
+              <p class="home__subtext text">Сотрудничаем более чем с&nbsp;двухста фабриками и&nbsp;производителями</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="intermediate">
+      <div class="intermediate__mini-container mini-container">
+        <h3 class="intermediate__title title">Закажите консультацию</h3>
+        <form class="intermediate__form">
+          <input class="intermediate__item mobile" placeholder="Ваш номер телефона">
+          <input class="intermediate__item name" placeholder="ФИО">
+          <button class="intermediate__btn-order btn-order">Заказать консультацию<span class="intermediate__price">
+              <p>2000&nbsp;р.</p></span></button>
+        </form>
+      </div>
+    </div>
+  </main>
+  <footer class="footer">
+    <div class="container footer__container">
+      <div class="footer__logo logo"></div>
+      <div class="footer__phone" href="tel:891082505256">+7 (910) 825-05-25</div>
+      <div class="footer__address">Ярославль, ул. Свободы, д.71А</div>
+    </div>
+  </footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="./assets/js/src/script.js"></script>
 </body>

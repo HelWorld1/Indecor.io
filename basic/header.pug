@@ -1,21 +1,21 @@
 nav.nav-panel
-  .container
-    .nav-panel__body
-      .nav-panel__logo.logo
+  .container.nav-panel__container
+    .nav-panel__logo.logo
+    .nav-panel__item
       ul.nav-panel__content
-        li.nav-panel__item
+        li.nav-panel__li.mobile_hide
             a.nav-panel__link-anchor О нас
-        li.nav-panel__item
+        li.nav-panel__li.mobile_hide
           a.nav-panel__link-anchor Услуги
-        li.nav-panel__item
+        li.nav-panel__li.mobile_hide
           a.nav-panel__link-anchor Портфолио
-        li.nav-panel__item
-          a.nav-panel__link-anchor Сотрудничество
-      .nav-panel__social
-        svg
-          use(xlink:href='assets/img/sprite.svg#facebook' class='facebook')
-        svg
-          use(xlink:href='assets/img/sprite.svg#instagram' class='instagram') 
-      .burger
-        svg
-          use(xlink:href='assets/img/sprite.svg#burger' class='burger')
+        li.nav-panel__li.mobile_hide
+          a.nav-panel__link-anchor Сотрудничество 
+    .nav-panel__item
+      .nav-panel__social.mobile_hide
+        svg.nav-panel__svg.facebook
+          use(xlink:href='assets/img/sprite.svg#facebook')
+        svg.nav-panel__svg.instagram
+          use(xlink:href='assets/img/sprite.svg#instagram')
+      svg.nav-panel__svg.burger
+        use(xlink:href='assets/img/sprite.svg#burger' class='burger')

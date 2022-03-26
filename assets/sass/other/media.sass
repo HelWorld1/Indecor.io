@@ -1,8 +1,118 @@
 /* Media */
 @media screen and (max-width: 1600px)
-  h1
-    color: red
-@media screen and (max-width: 992px)
+  .container
+    max-width: 1640px
+  .nav-panel
+    &__svg
+      width: 30px
+      height: 31px
+  .footer
+    &__phone
+      font-size: 20px
+      line-height: 29px
+    &__address
+      font-size: 20px
+      line-height: 29px
+
+@media screen and(max-width: 1500px)
+  .home
+    &__link
+      flex-direction: column
+    &__anchor-link
+      margin-top: 20px
+    &__img_shadow
+      margin-top: 100px
+    &__footer
+      top: 0
+
+@media screen and(max-width: 1224px)
+  .intermediate
+    &__btn-order
+      left: 50%
+
+@media screen and (max-width: 1024px)
+  .mobile_hide
+    display: none
+  .burger
+    display: inline-block
+    width: 10px
+    height: auto
+    order: 1
+  .facebook
+    order: 100000
+  .instagram
+    order: 100000
+  .nav-panel
+    &__container
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+    &__body
+      padding-top: 15px
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      flex-direction: column
+      justify-content: space-between
+      align-items: center
+      gap: 30px
+    &__content
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      flex-direction: column
+      align-items: center
+      order: 100000
+    &__link-anchor
+      font-family: 'Montserrat Medium'
+      font-size: 18px
+      line-height: 22px
+      text-decoration: none
+    &__social
+      order: 1
+    &__svg
+      margin: 0
+      padding: 0
+      display: inline-block
+      width: 30px
+      height: 31px
+  .home
+    &__content
+      justify-content: center
+      text-align: center
+
+  .intermediate
+    &__mini-container
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      flex-direction: column
+      align-items: center
+    &__btn-order
+      left: 0
 @media screen and (max-width: 768px)
 @media screen and (max-width: 576px)
+  .home
+    &__btn-order
+      padding: 19px 45px
+      font-size: 15px
+    &__img_shadow
+      display: none
+    &__footer
+      flex-direction: column
+  .intermediate
+    &__price
+      display: none
+    &__form
+      display: grid
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
 @media screen and (max-width: 375px)
+  .nav-panel
+    &__container
+      flex-direction: column
+    &__item:nth-child(2)
+      order: 100000
+  .home
+    &__title
+      font-size: 35px
+      line-height: 43px

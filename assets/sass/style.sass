@@ -6,22 +6,155 @@
   max-width: 1719px
   margin: 0 auto
   padding: 0 15px
+
+.burger
+  display: none
+
+.logo
+  width: 297px
+  height: 75px
+  background-image: url('../img/sprite.webp')
+  background-repeat: no-repeat
+  background-position: 0 0
 .nav-panel
-  &__body
-    margin: 0
-    padding: 15px 0
-    display: grid
-    grid-template-columns: 1fr 2fr 1fr
-  &__content
-    margin: 0
-    padding: 0
+  position: fixed
+  top: 0
+  width: 100%
+  z-index: 10000
+  &__container
     display: -webkit-flex
     display: -ms-flex
     display: flex
-    justify-content: space-around
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+  &__content
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
     list-style: none
   &__link-anchor
     font-family: 'Montserrat Medium'
     font-size: 18px
     line-height: 22px
     text-decoration: none
+  &__item:last-child
+    max-width: 108px
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    justify-content: flex-end
+    flex-wrap: wrap
+    gap: 10px
+  &__social
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    align-items: center
+  &__svg
+    display: inline-block
+    width: 30px
+    height: 31px
+
+.home
+  margin-bottom: 105px
+  &__container
+  &__content
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+  &__body
+  &__title
+    max-width: 894px
+    margin-bottom: 20px
+    font-family: 'Montserrat Bold'
+    font-size: 48px
+    line-height: 59px
+    letter-spacing: 0.04em
+  &__text
+    margin-bottom: 100px
+    max-width: 894px
+  &__link
+    margin-right: 30px
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    justify-content: space-around
+    align-items: center
+  &__btn-order
+    padding: 19px 62px
+  &__anchor-link
+    border-bottom: 1px solid #252525
+  &__img_shadow
+    position: relative
+    width: 509px
+    height: 685px
+    background-color: #DFDDDD
+  &__img
+    position: relative
+    right: 30px
+    bottom: 30px
+    width: 509px
+    height: 685px
+    background-image: url('../img/sprite.webp')
+    background-repeat: no-repeat
+    background-position: -1300px -1100px
+  &__footer
+    position: relative
+    top: -109px
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    justify-content: space-between
+  &__item
+    max-width: 230px
+  &__subtitle
+    font-family: 'Montserrat Bold'
+    font-size: 48px
+    line-height: 59px
+    letter-spacing: 0.04em
+
+.intermediate
+  padding-top: 18px
+  padding-bottom: 71px
+  background-color: #DFDDDD
+  &__mini-container
+    text-align: center
+  &__title
+    margin-bottom: 43px
+  &__form
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr))
+  &__item
+    padding-left: 19px
+    font-family: 'Montserrat Medium'
+    font-size: 18px
+    line-height: 22px
+  &__btn-order
+    position: relative
+  &__price
+    position: absolute
+    right: -61px
+    bottom: -50%
+    margin: 0
+    padding: 0
+    padding: 17px 40px
+    font-family: 'Montserrat Semibold'
+    font-size: 18px
+    line-height: 22px
+    letter-spacing: 0.155em
+    background-color: #fff
+
+.footer
+  &__container
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+    font-family: 'Montserrat Bold'
+    font-size: 24px
+    line-height: 29px

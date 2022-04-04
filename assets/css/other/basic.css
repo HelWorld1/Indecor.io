@@ -4,6 +4,7 @@
 /* Color */
 /* Basic style */
 * {
+  font-family: "Montserrat Regular";
   box-sizing: border-box;
   color: #252525;
 }
@@ -93,6 +94,8 @@ video {
   margin: 0;
   padding: 0;
   border: none;
+  text-decoration: none;
+  list-style: none;
 }
 
 main {
@@ -149,7 +152,7 @@ button {
   font: 18px/22px "Montserrat Semibold";
   background: #000;
   letter-spacing: 0.155em;
-  color: #FFFFFF;
+  color: #fff;
 }
 
 .anchor-link {
@@ -159,4 +162,28 @@ button {
 
 .mobile {
   font: 18px/110% "Montserrat Medium";
+}
+
+.link {
+  font: 18px/22px "Montserrat Semibold";
+  letter-spacing: 0.155em;
+  border-bottom: 1px solid #252525;
+}
+
+.subtitle {
+  font: 24px/164.4% "Montserrat Medium";
+}
+
+.noactive:after {
+  right: 0;
+  transform: rotate(-90deg);
+}
+
+.active:after {
+  right: 28px;
+  transform: rotate(90deg);
+}
+
+.desktop:after {
+  top: 15px;
 }

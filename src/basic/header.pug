@@ -1,0 +1,23 @@
+nav.nav-panel.home__nav-panel
+  .container.nav-panel__container
+    .nav-panel__logo.logo
+    .nav-panel__item
+      ul.nav-panel__content
+        li.nav-panel__li.mobile_hide
+            a(href='#about-us').nav-panel__link-anchor О нас
+        li.nav-panel__li.mobile_hide
+          a(href='#services').nav-panel__link-anchor Услуги
+        li.nav-panel__li.mobile_hide
+          a(href='#portfolio').nav-panel__link-anchor Портфолио
+        li.nav-panel__li.mobile_hide
+          a(href='../other/cooperation.min.html').nav-panel__link-anchor Сотрудничество 
+    .nav-panel__item
+      .nav-panel__social.mobile_hide
+        a(href='https://github.com/HelWorld1').nav-panel__link
+          svg.nav-panel__svg.github
+            use(xlink:href='assets/img/sprite.svg#github')
+        a(href='mailto:helworldd@yandex.ru?subject=Вопрос:').nav-panel__link
+          svg.nav-panel__svg.mail
+            use(xlink:href='assets/img/sprite.svg#mail')
+      svg.nav-panel__svg.burger
+        use(xlink:href='assets/img/sprite.svg#burger' class='burger')

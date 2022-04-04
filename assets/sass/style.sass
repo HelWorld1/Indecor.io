@@ -13,14 +13,14 @@
 .logo
   width: 297px
   height: 75px
-  background-image: url('../img/sprite.webp')
+  background-image: url('../img/logo.png')
   background-repeat: no-repeat
-  background-position: 0 0
-.nav-panel
+.home__nav-panel
   position: fixed
   top: 0
   width: 100%
   z-index: 10000
+.nav-panel
   &__container
     display: -webkit-flex
     display: -ms-flex
@@ -53,18 +53,16 @@
   &__svg
     display: inline-block
     width: 30px
-    height: 31px
+    height: 30px
 
 .home
   margin-bottom: 105px
-  &__container
   &__content
     display: -webkit-flex
     display: -ms-flex
     display: flex
     flex-direction: row
     flex-wrap: wrap
-  &__body
   &__title
     max-width: 894px
     margin-bottom: 20px
@@ -85,21 +83,20 @@
   &__btn-order
     padding: 19px 62px
   &__anchor-link
-    border-bottom: 1px solid #252525
+    border-bottom: 1px solid $fourth-color
   &__img_shadow
     position: relative
     width: 509px
     height: 685px
-    background-color: #DFDDDD
+    background-color: $background
   &__img
     position: relative
     right: 30px
     bottom: 30px
     width: 509px
     height: 685px
-    background-image: url('../img/sprite.webp')
+    background-image: url('../img/home_img.png')
     background-repeat: no-repeat
-    background-position: -1300px -1100px
   &__footer
     position: relative
     top: -109px
@@ -109,6 +106,7 @@
     justify-content: space-between
   &__item
     max-width: 230px
+    text-align: center
   &__subtitle
     font-family: 'Montserrat Bold'
     font-size: 48px
@@ -133,6 +131,7 @@
     line-height: 22px
   &__btn-order
     position: relative
+    cursor: pointer
   &__price
     position: absolute
     right: -61px
@@ -146,6 +145,284 @@
     letter-spacing: 0.155em
     background-color: #fff
 
+.about-us
+  padding-top: 94px
+  &__container
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    justify-content: space-between
+  &__body_left
+    display: block
+  &__shadow
+    position: relative
+    background-color: #DFDDDD
+  &__img
+    position: relative
+    left: 30px
+    top: 30px
+    width: 846px
+    height: 389px
+    background-image: url('../img/about_img.png')
+    background-repeat: no-repeat
+  &__body-right
+    max-width: 720px
+  &__title
+    margin-bottom: 29px
+  &__item
+    margin-bottom: 13px
+    min-height: 240px
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__text
+    line-height: 110%
+  &__link
+    display: inline-block
+    margin-bottom: 21px
+  &__slogan
+    font-family: 'Montserrat Semibold'
+    font-size: 24px
+    line-height: 164.4%
+
+.portfolio
+  margin-bottom: 134px
+  &__title
+    text-align: center
+    margin-bottom: 78px
+  &__body
+    display: grid
+    grid-template-columns: repeat(auto-fit, minmax(679px, 1fr))
+    grid-row-gap: 82px
+    margin-bottom: 82px
+  &__item
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: column
+    align-items: center
+  &__img
+    margin-bottom: 14px
+    width: 679px
+    height: 455px
+    background-image: url('../img/article_img.png')
+    background-repeat: no-repeat
+  &__subtext
+    margin-bottom: 35px
+  &__footer
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-evenly
+    align-items: center
+  &__btn-order
+    padding: 19px 76px
+
+.services
+  margin-bottom: 134px
+  &__container
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    justify-content: space-between
+    align-items: center
+    flex-wrap: wrap
+  &__img
+    width: 631px
+    height: 801px
+    background-image: url('../img/services_img.png')
+    background-repeat: no-repeat
+  &__body
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    max-width: 786px
+    min-height: 660px
+  &__title
+    text-align: center
+  &__list
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    min-height: 567px
+  &__item
+    font-family: 'Montserrat Medium'
+    font-size: 24px
+    line-height: 164.4%
+    &:before
+      vertical-align: middle
+      content: ''
+      margin-right: 15px
+      display: inline-block
+      width: 9px
+      height: 9px
+      border-radius: 50%
+      background-color: #000
+
+.partners
+  margin-bottom: 127px
+  &__title
+    margin-bottom: 74px
+  &__body
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    justify-content: space-between
+  &__arrow
+    display: inline-block
+    width: 32px
+    height: 64px
+  &__arrow-right
+    transform: rotate(180deg)
+  &__list
+    max-width: 1000px
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+.jung
+  width: 247px
+  height: 58px
+  background-image: url('../img/jung.png')
+  background-repeat: no-repeat
+.schneider
+  width: 300px
+  height: 89px
+  background-image: url('../img/schneider.png')
+  background-repeat: no-repeat
+.gira
+  width: 242px
+  height: 61px
+  background-image: url('../img/gira.png')
+  background-repeat: no-repeat
+.fede
+  width: 300px
+  height: 62px
+  background-image: url('../img/fede.png')
+  background-repeat: no-repeat
+
+.director
+  margin-bottom: 232px
+  &__mini-container
+    display: block
+  &__body
+    margin-bottom: 96px
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__content
+    max-width: 786px
+    min-height: 355px
+  &__title
+    margin-bottom: 14px
+  &__subtitle
+    margin-bottom: 25px
+    font-family: 'Montserrat Bold'
+    font-size: 24px
+    line-height: 29px
+    letter-spacing: 0.04em
+  &__item
+    min-height: 236px
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+  &__text
+    font-family: 'Montserrat Medium'
+    font-size: 24px
+    line-height: 164.4%
+  &__img
+    width: 350px
+    height: 513px
+    background-image: url('../assets/img/director.png')
+    background-repeat: no-repeat
+  &__slogan
+    font-family: 'Montserrat Bold'
+    font-size: 24px
+    line-height: 164.4%
+    text-align: center
+
+.information
+  &__container
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &__body
+    padding-top: 36px
+    display: grid
+    grid-template-columns: 1fr
+    grid-row-gap: 36px
+  &__list
+    position: relative
+    margin: 0
+    padding: 24px 0
+    padding-left: 33px
+    background-color: $background
+    cursor: pointer
+    &:after
+      position: absolute
+      display: inline-block
+      width: 32px
+      height: 64px
+      content: url('../img/sprite.svg#arrow')
+      pointer-events: none
+  & summary
+    margin-bottom: 23px
+  &__subtitle
+    max-width: 521px
+    font-family: 'Montserrat Bold'
+  &__text
+    max-width: 521px
+  &__form
+    padding: 50px 70px
+    background-color: $background
+  &__label
+    margin-bottom: 15px
+    font-family: 'Montserrat Medium'
+    font-size: 18px
+    line-height: 164.4%
+  &__item
+    padding: 0
+    margin: 0
+    padding-left: 15px
+    margin-bottom: 55px
+    display: block
+    width: 100%
+    font-family: 'Montserrat Medium'
+    font-size: 18px
+    line-height: 22px
+  &__footer
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    justify-content: space-between
+  &__btn-order
+    padding: 19px 32px
+  &__social
+    display: -webkit-flex
+    display: -ms-flex
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &__link
+    display: block
+  &__svg
+    width: 30px
+    height: 31px
+
 .footer
   &__container
     display: -webkit-flex
@@ -155,6 +432,14 @@
     justify-content: space-between
     align-items: center
     flex-wrap: wrap
+    font-family: 'Montserrat Bold'
+    font-size: 24px
+    line-height: 29px
+  &__phone
+    font-family: 'Montserrat Bold'
+    font-size: 24px
+    line-height: 29px
+  &__address
     font-family: 'Montserrat Bold'
     font-size: 24px
     line-height: 29px

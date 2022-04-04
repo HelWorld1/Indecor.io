@@ -2,10 +2,6 @@
 @media screen and (max-width: 1600px)
   .container
     max-width: 1640px
-  .nav-panel
-    &__svg
-      width: 30px
-      height: 31px
   .footer
     &__phone
       font-size: 20px
@@ -13,6 +9,17 @@
     &__address
       font-size: 20px
       line-height: 29px
+  .about-us
+    &__container
+      flex-direction: column
+      align-items: center
+      text-align: center
+    &__shadow
+      background: none
+    &__img
+      margin-bottom: 29px
+      left: 0
+      top: 0
 
 @media screen and(max-width: 1500px)
   .home
@@ -24,6 +31,9 @@
       margin-top: 100px
     &__footer
       top: 0
+  .services
+    &__container
+      justify-content: center
 
 @media screen and(max-width: 1224px)
   .intermediate
@@ -90,7 +100,39 @@
       align-items: center
     &__btn-order
       left: 0
+  .director
+    &__mini-container
+      text-align: center
+    &__body
+      flex-direction: column
+      align-items: center
+    &__content
+      order: 10000000000000
+    &__img
+      margin-bottom: 40px
+      order: 1
+  .information, .cooperation
+    &__container
+      justify-content: center
+      text-align: center
+    &__content
+      margin-bottom: 36px
 @media screen and (max-width: 768px)
+  .about-us
+    &__shadow
+      display: none
+  .portfolio
+    &__body
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+    &__img
+      width: 300px
+  .services
+    &__img
+      display: none
+  .partners
+    &__item
+      &:nth-child(3n)
+        display: none
 @media screen and (max-width: 576px)
   .home
     &__btn-order
@@ -106,6 +148,39 @@
     &__form
       display: grid
       grid-template-columns: repeat(auto-fit, minmax(300px, 1fr))
+  .partners
+    display: block
+    &__title
+      display: block
+    &__body
+      display: -webkit-flex
+      display: -ms-flex
+      display: flex
+      flex-direction: column
+      justify-content: center
+      align-items: center
+    &__arrow
+      display: inline-block
+      width: 32px
+      height: 64px
+    &__arrow_left
+      display: inline-block
+      transform: rotate(45deg)
+    &__arrow-right
+      display: inline-block
+      transform: rotate(-135deg)
+    &__list
+      justify-content: center
+  .information
+    &__subtitle
+      padding-top: 15px
+    &__list
+      &:after
+        bottom: -13px
+  .noactive:after
+    left: 50%
+  .active:after
+    left: 45%
 @media screen and (max-width: 375px)
   .nav-panel
     &__container
@@ -116,3 +191,14 @@
     &__title
       font-size: 35px
       line-height: 43px
+  .subtitle
+    font-size: 21px
+    text-align: center
+  .portfolio
+    &__btn-order
+      padding: 19px 38px
+  .partners
+    margin-bottom: 0
+  .director
+    &__img
+      display: none

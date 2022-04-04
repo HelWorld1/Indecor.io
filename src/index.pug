@@ -1,0 +1,166 @@
+doctype html
+html(lang=en)
+  include basic/head.pug
+  link(rel="stylesheet", href="assets/css/style.min.css")
+  link(rel="stylesheet", href="assets/css/normalize.css")
+  body
+    include basic/header.pug
+    main
+      .home
+        .home__container.container
+          .home__content
+            .home__body
+              h1.home__title Разработка освещения интерьеров
+              p.home__text.text.
+                Студия светодизайна  Indecor создаст комфортное и функциональное освещение, отвечающее всем требованиям. 
+                Опираясь на наши знания, опыт и комплексный подход, мы преобразим ваше пространство, используя лишь один инструмент – свет!
+              .home__link
+                button.home__btn-order.btn-order Заказать подбор освещения
+                a(href='#test').home__anchor-link.anchor-link Смотреть портфолио
+            .home__img_shadow
+              .home__img
+            .home__footer
+              .home__item
+                h2.home__subtitle 386
+                p.home__subtext.text Выполненных проектов
+              .home__item
+                h2.home__subtitle 7 лет
+                p.home__subtext.text Опыта в разработке овещения
+              .home__item
+                h2.home__subtitle 200+
+                p.home__subtext.text Сотрудничаем более чем с двухста фабриками и<br> производителями
+      .intermediate
+        .intermediate__mini-container.mini-container
+          h3.intermediate__title.title Закажите консультацию
+          form.intermediate__form
+            input.intermediate__item.mobile(placeholder='Ваш номер телефона')
+            input.intermediate__item.name(placeholder='ФИО')
+            button.intermediate__btn-order.btn-order Заказать консультацию
+              span.intermediate__price
+                p 2000&nbsp;р.
+      .about-us#about-us
+        .about-us__container.container
+          .about-us__body_left
+            .about-us__shadow
+              .about-us__img
+          .about-us__body-right
+            h3.about-us__title.title О нас
+            .about-us__item
+              p.about-us__text.text.
+                Наша компания InDecor (ООО «Маркет-Ин») вышла на рынок в апреле 2014 года. 
+              p.about-us__text.text.
+                Мы являемся официальными дистрибьютора немецкого бренда электроустановки JUNG (ООО «Юнг») в Ярославской области. 
+              p.about-us__text.text.
+                Мы предлагаем световое оборудование  от эконом сегмента до<br> премиум, работаем напрямую с производителями различных фабрик, мирового уровня, 
+                а так же молодых начинающих, перспективных. 
+              p.about-us__text.text Мы всегда готовы предоставить лучшие цены, кто к нам приходит за<br> светом, без скидок не уйдёт.
+            a.about-us__link.link Читать далее...
+            p.about-us__slogan Атмосфера - это Мы.
+      .portfolio#portfolio
+        .container
+          h3.portfolio__title.title Наши работы
+          .portfolio__body
+            div.portfolio__item
+              .portfolio__img
+              h4.portfolio__subtitle Установка оборудования от Kink Light
+              a.portfolio__link.link Посмотреть все фото
+            div.portfolio__item
+              .portfolio__img
+              h4.portfolio__subtitle Установка оборудования от Kink Light
+              a.portfolio__link.link Посмотреть все фото
+            div.portfolio__item
+              .portfolio__img
+              h4.portfolio__subtitle Установка оборудования от Kink Light
+              a.portfolio__link.link Посмотреть все фото
+            div.portfolio__item
+              .portfolio__img
+              h4.portfolio__subtitle Установка оборудования от Kink Light
+              a.portfolio__link.link Посмотреть все фото
+          .portfolio__footer
+            a.portfolio__btn-order.btn-order Оставить заявку
+            a.portfolio__link_mini.link Больше проектов
+      .services#services
+        .services__container.container
+          .services__img
+          .services__body
+            h3.services__title.title Наши услуги
+            ul.services__list
+              li.services__item Комплектация освещения по готовому дизайн-проекту. От<br> щитка до лампочки
+              li.services__item Технический аудит дизайн-проекта в разделе<br> освещения и электроустановки
+              li.services__item Подбор освещения под бюджет 
+              li.services__item Консультация по освещению в доме, подбор фабрик, проектное решение, «умный дом»
+              li.services__item Проектирование в разделе ЭО
+              li.services__item Умный дом, проектирование, монтаж. 
+              li.services__item Монтажные работы
+      .partners
+        .container
+          h3.partners__title.title Бренды с которыми мы работаем
+          .partners__body
+            button.partners__arrow_left
+              svg.partners__arrow_left.partners__arrow
+                use(xlink:href='assets/img/sprite.svg#arrow')
+            .partners__list
+              .partners__item.jung
+              .partners__item.schneider
+              .partners__item.jung
+              .partners__item.gira
+              .partners__item.fede
+              .partners__item.gira
+            button.partners__arrow-right
+              svg.partners__arrow_left.partners__arrow
+                use(xlink:href='assets/img/sprite.svg#arrow')
+      .director
+        .director__mini-container.mini-container
+          .director__body
+            .director__content
+              h3.director__title.title Руководитель
+              h4.director__subtitle Алла Александровна Плесцова
+              .director__item
+                p.director__text.
+                  Работаю с системами электрики и слаботочных систем с<br> 2005 года.
+                p.director__text.
+                  От проектировщика и сметчика до руководителя проектов.
+                p.director__text.
+                  Когда я создавала компанию у меня была главная цель: создать лучший сервис в продажах!
+            .director__img
+          .director__footer
+            h5.director__slogan.
+              Мой девиз в работе: «Сделать всё для того, чтобы понять потребности заказчика и предложить оптимальное решение в проекте»
+      .information
+        .information__container.container
+          .information__content
+            .information__title.title Часто задаваемые вопросы
+              .information__body
+                details.information__list.list_1.noactive.desktop
+                  summary
+                    h4.information__subtitle.subtitle Оплата товара
+                  p.information__text.text Оплата производится наличными или безналичным расчетом
+                details.information__list.list_2.noactive.desktop
+                  summary
+                    h4.information__subtitle.subtitle Доставка
+                  p.information__text.text тест
+                details.information__list.list_3.noactive.desktop
+                  summary
+                    h4.information__subtitle.subtitle Гарантия на возврат товара
+                  p.information__text.text
+          form.information__form
+            h4.information__subtitle.subtitle Заказать подбор освещения
+            label.information__label Телефон
+              input(placeholder='+78036666666').information__item
+            label.information__label Имя Фамилия
+              input(placeholder='ФИО').information__item
+            .information__footer
+              a.information__btn-order.btn-order Оставить заявку
+              .information__social
+                a(href='https://github.com/HelWorld1').information__link
+                  svg.information__svg.github
+                    use(xlink:href='assets/img/sprite.svg#github')
+                a(href='mailto:helworldd@yandex.ru?subject=Вопрос:').information__link
+                  svg.information__svg.mail
+                    use(xlink:href='assets/img/sprite.svg#mail')
+              
+          
+        
+    include basic/footer.pug
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js")
+    script(src="./assets/js/script.min.js")

@@ -4,12 +4,15 @@
 
 /* Color */
 $first-color: #FED100
-$second-color: #FFFFFF
-$third-color: #333333
+$second-color: #fff
+$third-color: #333
+$fourth-color: #252525
+$background: #E5E4E4
 /* Basic style */
 *
+  font-family: 'Montserrat Regular'
   box-sizing: border-box
-  color: #252525
+  color: $fourth-color
 
 body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -27,7 +30,8 @@ time, mark, audio, video
   margin: 0
   padding: 0
   border: none
-
+  text-decoration: none
+  list-style: none
 main
   padding-top: 100px
 
@@ -88,3 +92,26 @@ input, button
   font-family: 'Montserrat Medium'
   font-size: 18px
   line-height: 110%
+
+.link
+  font-family: 'Montserrat Semibold'
+  font-size: 18px
+  line-height: 22px
+  letter-spacing: 0.155em
+  border-bottom: 1px solid $fourth-color
+
+.subtitle
+  font-family: 'Montserrat Medium'
+  font-size: 24px
+  line-height: 164.4%
+
+.noactive:after
+  right: 0
+  transform: rotate(-90deg)
+
+.active:after
+  right: 28px
+  transform: rotate(90deg)
+
+.desktop:after
+  top: 15px

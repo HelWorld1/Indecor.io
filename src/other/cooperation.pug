@@ -1,0 +1,57 @@
+html(lang=en)
+  include ../basic/head.pug
+  link(rel="stylesheet", href="../assets/css/style.min.css")
+  link(rel="stylesheet", href="../assets/css/normalize.css")
+body
+  nav.nav-panel.cooperation__nav-panel
+    .container.nav-panel__container
+      .nav-panel__title.title Indecor.studio
+      .nav-panel__item
+        ul.nav-panel__content
+          li.nav-panel__li.mobile_hide
+              a(href='../index.min.html#about-us').nav-panel__link-anchor О нас
+          li.nav-panel__li.mobile_hide
+            a(href='../index.min.html#services').nav-panel__link-anchor Услуги
+          li.nav-panel__li.mobile_hide
+            a(href='../index.min.html#portfolio').nav-panel__link-anchor Портфолио
+          li.nav-panel__li.mobile_hide
+            a.nav-panel__link-anchor Сотрудничество
+      .nav-panel__item
+        .nav-panel__social.mobile_hide
+          a(href='#').nav-panel__link
+            svg.nav-panel__svg.facebook
+              use(xlink:href='../assets/img/sprite.svg#facebook')
+          a(href='#').nav-panel__link
+            svg.nav-panel__svg.instagram
+              use(xlink:href='../assets/img/sprite.svg#instagram')
+        svg.nav-panel__svg.burger
+          use(xlink:href='../assets/img/sprite.svg#burger' class='burger')
+  .cooperation
+    .cooperation__container.container
+      .cooperation__content
+        .cooperation__title.title Присоединяйтесь к команде<br> INDECOR
+          .cooperation__body
+            h4.cooperation__text.text С нами Ваша работа станет проще, а доход - выше!
+            h5.cooperation__subtitle.subtitle Почему мы?
+            ul.cooperation__list
+              li.cooperation__li 100% сертифицированный товар с гарантией от 1 до 5 лет
+              li.cooperation__li Мы следим за новинками и рассказываем о них Вам
+              li.cooperation__li Всегда новые печатные каталоги более 100 фабрик — выбирайте с удовольствием
+              li.cooperation__li Уютный офис в центре Ярославля, на ул. Свободы, 71а, БЦ "Новая Галерея"
+              li.cooperation__li Мы всегда на связи, 24/7 в неделю
+              li.cooperation__li Мы Официальный дистрибьютор и дилер крупнейших производителей электроустановки и светотехники
+      form.cooperation__form
+        h4.cooperation__subtitle.subtitle Заказать подбор освещения
+        label.cooperation__label Телефон
+          input(placeholder='+78036666666').cooperation__item
+        label.cooperation__label Имя Фамилия
+          input(placeholder='ФИО').cooperation__item
+        .cooperation__footer
+          a.cooperation__btn-order.btn-order Оставить заявку
+          .cooperation__social
+            a(href='#').cooperation__link
+              svg.cooperation__svg.facebook
+                use(xlink:href='../assets/img/sprite.svg#facebook')
+            a(href='#').cooperation__link
+              svg.cooperation__svg.instagram
+                use(xlink:href='../assets/img/sprite.svg#instagram')

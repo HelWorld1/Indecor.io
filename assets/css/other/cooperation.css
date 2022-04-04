@@ -1,0 +1,81 @@
+.cooperation__nav-panel {
+  position: relative;
+  margin-bottom: 82px;
+}
+
+.cooperation__container {
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.cooperation__body {
+  padding-top: 36px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-row-gap: 36px;
+}
+
+.cooperation__list {
+  max-width: 791px;
+  padding-left: 15px;
+}
+
+.cooperation__subtitle {
+  font: 24px/29px "Montserrat Bold";
+  letter-spacing: 0.04em;
+}
+
+.cooperation__text {
+  font: 24px/29px "Montserrat Medium";
+}
+
+.cooperation__form {
+  background: #E5E4E4;
+  padding: 50px 70px;
+}
+
+.cooperation__label {
+  font: 18px/164.4% "Montserrat Medium";
+  margin-bottom: 15px;
+}
+
+.cooperation__item {
+  font: 18px/22px "Montserrat Medium";
+  padding: 0;
+  margin: 0;
+  margin-bottom: 55px;
+  display: block;
+  width: 100%;
+}
+
+.cooperation__footer {
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cooperation__btn-order {
+  padding: 19px 32px;
+}
+
+.cooperation__social {
+  display: -ms-flex;
+  display: flex;
+  justify-content: space-between;
+}
+
+.cooperation__link {
+  display: block;
+}
+
+.cooperation__svg {
+  width: 30px;
+  height: 31px;
+}
+
+.cooperation__li {
+  font: 18px/164.4% "Montserrat Medium";
+  list-style: disc;
+}
